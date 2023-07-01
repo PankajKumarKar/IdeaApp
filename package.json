@@ -1,0 +1,14 @@
+{
+  "name": "ideaapp",
+  "version": "1.0.0",
+  "description": "Using Node Js",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pankaj Kar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
