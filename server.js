@@ -21,7 +21,11 @@ db.once("open", () => {
 
 // create Admin
 async function init() {
-  const admin = await userModel.create({
+  let admin = await userModel.findOne({ userId: "admin" });
+
+  if (admin) return console.log("Admin user already present");
+
+  admin = await userModel.create({
     name: "Pankaj kar",
     userId: "admin",
     email: "pankaj@gmail.com",
